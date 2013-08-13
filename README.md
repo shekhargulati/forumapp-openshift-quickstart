@@ -1,4 +1,4 @@
-forumapp
+forumapp [![Build Status](https://travis-ci.org/shekhargulati/forumapp-openshift-quickstart.png)](https://travis-ci.org/shekhargulati/forumapp-openshift-quickstart)
 ========
 
 Spring PostgreSQL Demo Application
