@@ -1,7 +1,15 @@
 language: java
 script: mvn package -Popenshift
 jdk:
-  - oraclejdk7
-  - openjdk7
-  - openjdk6
-
+- oraclejdk7
+- openjdk7
+- openjdk6
+deploy:
+  provider: openshift
+  user: shekhar.xebia@gmail.com
+  password:
+    secure: WDsSR7Zu3zaRKPiQ4JlVMeksjNmNRkcXHr4gCD/zdQdYRC8fPvKL2b2sTtdGt0L2eYxsR+XYiRwfSBX1PUdusqi+jn7IynEhLPg9u1T9BUEWN1eSB8Hw1gGbjx88mLdEJu4eRZe4M7NY0i1m/JxN2RaudXZeIKP1tdTNXZBMyys=
+  app: forumapp
+  domain: newideas
+  on:
+    repo: shekhargulati/forumapp-openshift-quickstart
